@@ -9,6 +9,7 @@ namespace Iuga_Dorut_Lab2
     class DoughnutMachine :Component
     {
         private DoughnutType mFlavor;
+        private System.Collections.ArrayList mDoughnuts = new System.Collections.ArrayList();
         public DoughnutType Flavor
         {
             get
@@ -20,7 +21,7 @@ namespace Iuga_Dorut_Lab2
                 mFlavor = value;
             }
         }
-        private System.Collections.ArrayList mDoughnuts = new System.Collections.ArrayList();
+        
         public Doughnut this[int Index]
         {
             get
